@@ -14,6 +14,12 @@
 
 @implementation ViewController
 
+@synthesize display;
+
+-(IBAction) click1 {
+    display.text = @"1";
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
