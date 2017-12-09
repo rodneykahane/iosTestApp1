@@ -13,6 +13,21 @@
 @property (strong, nonatomic) IBOutlet UILabel *display;
 
 -(IBAction) click1;
+-(IBAction) click2;
+-(IBAction) click3;
+-(IBAction) click4;
+-(IBAction) click5;
+-(IBAction) click6;
+-(IBAction) click7;
+-(IBAction) click8;
+-(IBAction) click9;
+-(IBAction) click0;
+-(IBAction) clickDot;
+-(IBAction) clickDiv;
+-(IBAction) clickMul;
+-(IBAction) clickSub;
+-(IBAction) clickAdd;
+-(IBAction) clickEquals;
 
 @end
 
