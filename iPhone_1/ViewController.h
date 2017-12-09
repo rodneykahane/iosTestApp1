@@ -12,6 +12,10 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *display;
 
+-(void) processDigit: (int) digit;
+-(void) processOp: (char) theOp;
+
+//numeric keys
 -(IBAction) click1;
 -(IBAction) click2;
 -(IBAction) click3;
@@ -22,12 +26,22 @@
 -(IBAction) click8;
 -(IBAction) click9;
 -(IBAction) click0;
--(IBAction) clickDot;
+
+//other
+-(IBAction) clickDigit: (UIButton *) sender;  //lets you use one function to select 0-9 instead of creating one for each number
+
+//math functions
 -(IBAction) clickDiv;
 -(IBAction) clickMul;
 -(IBAction) clickSub;
 -(IBAction) clickAdd;
+
+//misc buttons
+-(IBAction) clickDot;
 -(IBAction) clickEquals;
+-(IBAction) clickClear;  //not implemented yet
+
+
 
 @end
 

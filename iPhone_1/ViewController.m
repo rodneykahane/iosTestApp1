@@ -7,12 +7,20 @@
 //
 
 #import "ViewController.h"
+#import "Calculator.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+{
+    char op;
+    int currentNumber;
+    BOOL firstOperand;
+    Calculator *myCalculator;
+}
+
 
 @synthesize display;
 
@@ -78,6 +86,14 @@
 
 -(IBAction) clickEquals {
     display.text = @"=";
+}
+
+-(IBAction) clickClear {
+    //add some code here to clear the calc
+}
+
+-(IBAction) clickDigit:(UIButton *)sender {
+    //add some code here
 }
 
 - (void)viewDidLoad {
